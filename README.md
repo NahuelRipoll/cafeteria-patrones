@@ -245,8 +245,10 @@ Agregar persistencia con base de datos, historial de pedidos, control de stock o
 ### Decorator
 Agrega comportamiento a un objeto envolviendolo en otro que implementa la misma interfaz. El wrapper delega al objeto interno y le suma algo encima. Se pueden encadenar varios wrappers. Evita crear una subclase por cada combinacion posible de funcionalidades.
 
+
 ### Strategy
 Define una interfaz comun para varias formas de hacer una operacion. Cada variante es una clase separada. La clase que necesita la operacion recibe la estrategia como parametro y la usa sin saber cual es. Elimina el `if/else` para elegir comportamiento.
+
 
 ### Singleton
 Garantiza que una clase tenga una sola instancia en todo el programa. El constructor es privado y se expone un metodo estatico `getInstance()` que crea la instancia la primera vez y siempre devuelve la misma. Util para sistemas centrales o recursos compartidos.
